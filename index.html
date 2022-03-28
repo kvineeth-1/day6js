@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <pre style="color: brown;font-size: 21px;">
+                Functions  
+                1-Normal Functions
+                2-Functions with parameters
+                3-Functions with return parameters
+                4-Regular Functions
+                5-Function Expression
+                6- Arrow Functions
+            </pre>
+            <pre style="color: cornflowerblue;font-size: 18px;">
+                Function declarations load before any code is executed while 
+                Function expressions load only when the interpreter reaches that line of code.
+                
+                
+                function foo(p1,p2){
+                    console.log('function declaration')
+                }
+                foo();
+               
+                var foo = function(p1,p2){
+                    console.log('function expression')
+                }
+                 foo();
+
+
+                 Constructor Function
+                In JavaScript, a constructor function is used to create objects. 
+                To create an object from a constructor function, we use the new keyword.
+
+                function Person () {
+                    this.name = 'John',
+                    this.age = 23
+                }
+
+
+                const person = new Person();
+
+               IIFE
+               invoke immideatly whenever they created
+               (function(){
+                console.log('invoked function')
+               })()
+
+               
+               
+               CallBack Functions
+               function name(dummy){
+                dummy()
+                console.log('hello')
+                }
+                function roll(){
+                    console.log('hii')
+                }
+                name(roll)
+
+
+
+                Higher Order functions
+                Which accepts another function as an argument or which takes the function as an input and gives 
+                the another function as an output. (higher order functions examples are map,filter,reduce)
+
+                Closures
+                clousers are the functions bundled to gather , we can access another function variable
+                function outer(a){
+                    var a=10
+            
+                    function inner(){
+                        console.log(a)
+                    }
+                    inner()
+                    }
+                    outer(5);
+
+
+                FirstClass Functions
+                1)functions can be passed as an argument to another function.
+                2)function can be returned by another function
+                3)function can be assigned as an value
+
+
+
+    
+ 
+
+
+
+        
+
+
+
+    
+
+            </pre>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>
